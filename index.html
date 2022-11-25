@@ -4,18 +4,16 @@
    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
  </head>
  <body>
-   <style>
-   </style>
    <div class="calculator">
      <div class="display">
-       
+       <div class="total" id="total">0</div>
      </div>
      <div class="table">
        <div class="ver1">
          <div class="hor1">
-           <button>1</button></div>
-         <div class="hor2"><button>2</button></div>
-         <div class="hor3"><button>3</button></div>
+           <button onclick="addNum()">1</button></div>
+         <div class="hor2"><button onclick="message1()">2</button></div>
+         <div class="hor3"><button onclick="message2()">3</button></div>
        </div>
        <div class="ver2">
          <div class="hor1"><button>4</button></div>
@@ -29,7 +27,8 @@
        </div>
      </div>
    </div>
-   <script>
+   <div><button class="button-30" role="button" onclick="message()">Info</button></div>
+   <script src="index.js">
    </script>
  </body>
 </html>
