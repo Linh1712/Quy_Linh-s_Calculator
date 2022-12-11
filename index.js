@@ -1,7 +1,16 @@
-   function addNum(){
-     let num = document.getElementById('total');
-     num.innerText =1;
-   }
-   function message(){
-     alert('Calculator will be update later');
-   }
+
+
+const total = document.getElementById('total');
+
+function addNum(num) {
+  total.innerText = num;
+}
+function addSp(sp) {
+  total.innerText = sp;
+}
+function clearAll(){
+  total.innerHTML = '0';
+}
+function clearEach(){
+  total.innerText = '0';
+}
