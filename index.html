@@ -15,27 +15,27 @@
        <div>Menu</div>
      </div>
    </nav>
-  <div class="display"><span id="total">0</span></div>
+  <div class="display"><span id="total"></span></div>
   <div class="table">
  <button onclick="clearAll()">AC</button>
- <button onclick="clearEach()"><img src="Delete/delete-svg.svg" alt="" class="del" id="clearAll"></button>
- <button onclick="addSp('%')">%</button>
- <button onclick="addSp('÷')">÷</button>
+ <button class="cancel" onclick="clearEach()"><img src="Delete/delete-svg.svg" alt="" class="del" id="clearAll"></button>
+ <button class="disabled" onclick="compute()">%</button>
+ <button class="disabled" onclick="addSp('÷')">÷</button>
  <button onclick="addNum(7)">7</button>
  <button onclick="addNum(8)">8</button>
  <button onclick="addNum(9)">9</button>
- <button onclick="addSp('×')">×</button>
+ <button class="disabled" onclick="addSp('×')">×</button>
  <button onclick="addNum(4)">4</button>
  <button onclick="addNum(5)">5</button>
  <button onclick="addNum(6)">6</button>
- <button onclick="addSp('-')">-</button>
+ <button class="disabled" onclick="addSp('-')">-</button>
  <button onclick="addNum(1)">1</button>
  <button onclick="addNum(2)">2</button>
  <button onclick="addNum(3)">3</button>
- <button onclick="addSp('+')">+</button>
- <button onclick="addSp('.')">.</button>
+ <button class="disabled" onclick="addSp('+')">+</button>
+ <button class="disabled" onclick="addNum('.')">.</button>
  <button onclick="addNum(0)">0</button>
- <button class="equal">=</button>
+ <button class="equal" onclick="cal()">=</button>
   </div>
  </div>
  <script src="index.js"></script>

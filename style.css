@@ -76,9 +76,24 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 .table button {
+  cursor: pointer;
   font-size: 20px;
   font-weight: 500;
   border: none;
+}
+.table button:disabled {
+  background-color: rgb(235, 235, 235);
+}
+.table button:disabled:hover {
+  background-color: rgb(235, 235, 235);
+  opacity: 1;
+}
+.table button:disabled:active {
+  background-color: rgb(235, 235, 235);
+  opacity: 1;
+}
+.table button:hover{
+  opacity: 0.8;
 }
 .table button:active {
   background-color: #99CCFF;
